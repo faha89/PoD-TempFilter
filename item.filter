@@ -103,8 +103,8 @@ ItemDisplay[cx5]: %NL%%NL%          %GREEN%###   %PURPLE%Orb of Corruption   %GR
 
 
 //║█║                             Equipment and Magic Item Handling                             ║█║
-ItemDisplay[RW !ETH]: %WHITE%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]
-ItemDisplay[RW ETH]: %GRAY%E.%NAME% %RED%[%WHITE%%SOCKETS%%RED%]
+ItemDisplay[RW !ETH]: %WHITE%%NAME%%CONTINUE%//%RED%[%WHITE%%SOCKETS%%RED%]
+ItemDisplay[RW ETH]: %GRAY%Eth %NAME%//%RED%[%WHITE%%SOCKETS%%RED%]
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //║                   ▬▬▬▬▬ [Optional] Rules for Ignoring Specific Items ▬▬▬▬▬                    ║
 //ItemDisplay[MAG !ID cm2]: //Ignore unidentified magic large charms.
@@ -113,11 +113,11 @@ ItemDisplay[RW ETH]: %GRAY%E.%NAME% %RED%[%WHITE%%SOCKETS%%RED%]
 
 ItemDisplay[MAG !ID (cm1 OR cm2 OR cm3 OR jew)]: %NL%%DOT-9B%%GREEN%####   %BLUE%%NAME% %WHITE%[%GRAY%%ILVL%%WHITE%]   %GREEN%####%NL% //Magical Unid SC/GC
 ItemDisplay[MAG !ID cm2]: %BLUE%%NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]  //Magical Unid Large Charm
-ItemDisplay[RARE !ID (jew OR rin OR amu)]: %NL%%NL%%DOT-9B%%GREEN%#### %YELLOW%%NAME%%WHITE%[%GRAY%L%ILVL%%WHITE%]  %GREEN%####%NL%%NL% //Unidentified Rare Jewel, Ring, Ammy
-ItemDisplay[RARE !ID (ci0 OR ci1 OR ci2 OR ci3)]: %NL%%NL%%DOT-9B%%GREEN%#### %YELLOW%%NAME%%WHITE%[%GRAY%%ILVL%%WHITE%]  %GREEN%####%NL%%NL% //Rare Circlets
+ItemDisplay[RARE !ID (jew OR rin OR amu)]: %NL%%NL%%DOT-9B%%GREEN%#### %YELLOW%%NAME%%WHITE%[%GRAY%L%ILVL%%WHITE%] %GREEN%####%NL%%NL% //Unidentified Rare Jewel, Ring, Ammy
+ItemDisplay[RARE !ID (ci0 OR ci1 OR ci2 OR ci3)]: %NL%%NL%%DOT-9B%%GREEN%#### %YELLOW%%NAME%%WHITE%[%GRAY%%ILVL%%WHITE%] %GREEN%####%NL%%NL% //Rare Circlets
 
-ItemDisplay[RARE (jew OR rin OR amu)]: %YELLOW%%NAME%%WHITE%[%GRAY%%ILVL%%WHITE%] //Identified Rare Jewel, Ring, Ammy
-ItemDisplay[MAG (jew OR rin OR amu)]: %BLUE%%NAME%%WHITE%[%GRAY%%ILVL%%WHITE%] //Identified Rare Jewel, Ring, Ammy
+ItemDisplay[RARE (jew OR rin OR amu)]: %YELLOW%%NAME% %WHITE%[%GRAY%%ILVL%%WHITE%] //Identified Rare Jewel, Ring, Ammy
+ItemDisplay[MAG (jew OR rin OR amu)]: %BLUE%%NAME% %WHITE%[%GRAY%%ILVL%%WHITE%] //Identified Rare Jewel, Ring, Ammy
 ItemDisplay[MAG ID (cm1 OR cm2 OR cm3 OR jew)]: %BLUE%%NAME% %WHITE%[%GRAY%%ILVL%%WHITE%] //Magical SC/GC
 
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -141,22 +141,18 @@ ItemDisplay[UNI !ID]: %NL%         %GOLD%%NAME%%NOTIFY-ITEM%         %NL%%CONTIN
 ItemDisplay[!(NMAG OR MAG OR RARE OR SET OR UNI)]: %ORANGE%%NAME%%CONTINUE%
 
 
-// Specific Items
-ItemDisplay[!SUP uit NMAG]: %RED% Monarch %RED%
-ItemDisplay[SUP uit NMAG]: %RED%# %WHITE%Superior Monarch %RED%#
+// ----- Specific Items -----
+ItemDisplay[!SUP uit NMAG]: %RED%# %WHITE%Monarch %RED%[%WHITE%%SOCKETS%%RED%] %RED%#
+ItemDisplay[SUP uit NMAG]: %RED%# %WHITE%Superior Monarch %RED%[%WHITE%%SOCKETS%%RED%] %RED%#
 
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                  ▬▬▬▬▬ Sockets for Everything Except Non-Magical Items ▬▬▬▬▬                  ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
+//ItemDisplay[!NMAG SOCK>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]
+
+//ItemDisplay[!ID !NMAG]: %NAME% %WHITE%[%GRAY%%ILVL%%WHITE%]%CONTINUE%
+
+ItemDisplay[NMAG SOCK>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]
 ItemDisplay[!NMAG SOCK>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]
-
-ItemDisplay[!ID !NMAG]: %NAME% %WHITE%%WHITE%[%GRAY%%ILVL%%WHITE%]
-ItemDisplay[!NMAG %PRICE%>34999]: %NAME% %WHITE%[%GRAY%%ILVL%%WHITE%]%WHITE%[35K%GOLD%G%WHITE%]
-ItemDisplay[ID !NMAG ]: %NAME% %WHITE%[%GRAY%%ILVL%%WHITE%]
-ItemDisplay[%PRICE%>34999]: %NAME% %WHITE%[%GRAY%%ILVL%%WHITE%]%WHITE%[35K%GOLD%G%WHITE%]
-
-[%PRICE%%GOLD%G%WHITE%]
-
-ItemDisplay[SOCK>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]
 
 //ItemDisplay[]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
