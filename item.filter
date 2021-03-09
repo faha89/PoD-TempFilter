@@ -51,15 +51,17 @@ ItemDisplay[RUNE>25]: %NL%%NL%         %PURPLE%@@@@@@@@@  %TAN%%RUNENAME% RUNE %
 //║                     ▬▬▬▬▬ Town Portal and ID Scrolls/Tomes and Keys ▬▬▬▬▬                     ║
 //Utilites
 ItemDisplay[tsc CLVL<30]: %GREEN%!%GRAY%TP
+ItemDisplay[tsc CLVL>29]:
 ItemDisplay[isc CLVL<30]: %GREEN%!%GRAY%ID
+ItemDisplay[isc CLVL>29]:
 ItemDisplay[tbk]: %GREEN%!%GRAY%TP Book
 ItemDisplay[ibk]: %GREEN%!%GRAY%ID Book
 
 //║                      ▬▬▬▬▬ Healing, Mana, and Rejuvination Potions ▬▬▬▬▬                      ║
-ItemDisplay[hp4 CLVL<85]: %GREEN%!%RED%Grt HP
+ItemDisplay[hp4 CLVL<85]: %GREEN%!%RED%hp
 ItemDisplay[hp4]: 
 ItemDisplay[hp5]: %GREEN%!%RED%HP
-ItemDisplay[mp4 CLVL<85]: %GREEN%!%BLUE%Grt Mana
+ItemDisplay[mp4 CLVL<85]: %GREEN%!%BLUE%mp
 ItemDisplay[mp4]: 
 ItemDisplay[mp5]: %GREEN%!%BLUE%MP
 ItemDisplay[hp1 CLVL<15]: %GREEN%!%RED%Min HP
@@ -74,8 +76,8 @@ ItemDisplay[mp3 CLVL<26]: %GREEN%!%BLUE%Reg Mana
 ItemDisplay[mp1 CLVL>14]:
 ItemDisplay[mp2 CLVL>19]:
 ItemDisplay[mp3 CLVL>25]:
-ItemDisplay[rvl]: %GREEN%!%PURPLE%Full Rejuvination
-ItemDisplay[rvs]: %GREEN%!%PURPLE%Rejuvination
+ItemDisplay[rvl]: %GREEN%!%PURPLE%Full
+ItemDisplay[rvs]: %GREEN%!%PURPLE%R
 
 
 ║                                   ▬▬▬▬▬ Special Items ▬▬▬▬▬                                   ║
