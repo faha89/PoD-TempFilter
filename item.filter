@@ -18,21 +18,21 @@ ItemDisplay[gfv OR gfw OR gfg OR gfr OR gfb OR gfy OR skf]: //Ignore Flawed Gems
 ItemDisplay[gsv OR gsw OR gsg OR gsr OR gsb OR gsy OR sku]: //Ignore Regular Gems
 //ItemDisplay[glg OR glb OR gly OR glr]: //Ignore All Flawless Except for Amethyst, Diamond, and Skull
 
-ItemDisplay[gzv]: %NL%         %ORANGE%[%PURPLE%@%ORANGE%]         %NL% //Flawless Amethyst
-ItemDisplay[glw]: %NL%         %ORANGE%[%WHITE%@%ORANGE%]         %NL% //Flawless Diamond
-ItemDisplay[glg]: %NL%         %ORANGE%[%GREEN%@%ORANGE%]         %NL% //Flawless Emerald
-ItemDisplay[glr]: %NL%         %ORANGE%[%RED%@%ORANGE%]         %NL% //Flawless Ruby
-ItemDisplay[glb]: %NL%         %ORANGE%[%BLUE%@%ORANGE%]         %NL% //Flawless Sapphire
-ItemDisplay[gly]: %NL%         %ORANGE%[%YELLOW%@%ORANGE%]         %NL% //Flawless Topaz
-ItemDisplay[skl]: %NL%         %ORANGE%[%GRAY%@%ORANGE%]         %NL% //Flawless Skull
+ItemDisplay[gzv]: %NL%         %ORANGE%[%PURPLE%Amethyst%ORANGE%]         %NL% //Flawless Amethyst
+ItemDisplay[glw]: %NL%         %ORANGE%[%WHITE%Diamond%ORANGE%]         %NL% //Flawless Diamond
+ItemDisplay[glg]: %NL%         %ORANGE%[%GREEN%Emerald%ORANGE%]         %NL% //Flawless Emerald
+ItemDisplay[glr]: %NL%         %ORANGE%[%RED%Ruby%ORANGE%]         %NL% //Flawless Ruby
+ItemDisplay[glb]: %NL%         %ORANGE%[%BLUE%Sapphire%ORANGE%]         %NL% //Flawless Sapphire
+ItemDisplay[gly]: %NL%         %ORANGE%[%YELLOW%Topaz%ORANGE%]         %NL% //Flawless Topaz
+ItemDisplay[skl]: %NL%         %ORANGE%[%GRAY%Skull%ORANGE%]         %NL% //Flawless Skull
 
-ItemDisplay[gpv]: %PURPLE%Amethyst //Perfect Gems
-ItemDisplay[gpw]: %WHITE%Diamond
-ItemDisplay[gpg]: %GREEN%Emereld
-ItemDisplay[gpr]: %RED%Ruby
-ItemDisplay[gpb]: %BLUE%Sapphire
-ItemDisplay[gpy]: %YELLOW%Topaz
-ItemDisplay[skz]: %GRAY%Skull
+ItemDisplay[gpv]: %PURPLE%Perfect Amethyst //Perfect Gems
+ItemDisplay[gpw]: %WHITE%Perfect Diamond
+ItemDisplay[gpg]: %GREEN%Perfect Emereld
+ItemDisplay[gpr]: %RED%Perfect Ruby
+ItemDisplay[gpb]: %BLUE%Perfect Sapphire
+ItemDisplay[gpy]: %YELLOW%Perfect Topaz
+ItemDisplay[skz]: %GRAY%Perfect Skull
 
 ItemDisplay[INF]: //Ignore Inferior Equipment
 
@@ -42,24 +42,24 @@ ItemDisplay[vps CLVL>41]: //Ignore all Stamina Potions
 ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl]: //Hide Choking, Exploding, Fulminating, Oil, Rancid, Strangling Potions
 ItemDisplay[MAG !ID (aq2 OR cq2) CLVL>69]: //Ignore Unidentified Magic Arrows/Bolts (Level 70+)
 
-ItemDisplay[RUNE<10]: %ORANGE%%RUNENAME% Rune %GRAY%(%RUNENUM%)
-ItemDisplay[RUNE<20]: %NL%%ORANGE%%RUNENAME% Rune %GRAY%(%RUNENUM%)%NL%%NOTIFY-ITEM%
-ItemDisplay[(RUNE>19 AND RUNE<26)]: %NL%%NL%         %RED%#%WHITE%#%BLUE%#  %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%)  %BLUE%#%WHITE%#%RED%#         %NL%%NL%%NOTIFY-ITEM%
-ItemDisplay[RUNE>25]: %NL%%NL%         %RED%###%WHITE%###%BLUE%###  %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%)  %BLUE%###%WHITE%###%RED%###         %NL%%NL%%NOTIFY-ITEM%
+ItemDisplay[RUNE<10]: %TAN%%RUNENAME% Rune %GRAY%(%RUNENUM%)
+ItemDisplay[RUNE<20]: %NL%%TAN%%RUNENAME% Rune %GRAY%(%RUNENUM%)%NL%%NOTIFY-ITEM%
+ItemDisplay[(RUNE>19 AND RUNE<26)]: %NL%%NL%         %PURPLE%###  %WHITE%%RUNENAME% RUNE %GRAY%(%RUNENUM%)  %PURPLE%###         %NL%%NL%%NOTIFY-ITEM%
+ItemDisplay[RUNE>25]: %NL%%NL%         %PURPLE%@@@@@@@@@  %TAN%%RUNENAME% RUNE %GRAY%(%RUNENUM%)  %PURPLE%@@@@@@@@@         %NL%%NL%%NOTIFY-ITEM%
 
 
 //║                     ▬▬▬▬▬ Town Portal and ID Scrolls/Tomes and Keys ▬▬▬▬▬                     ║
 //Utilites
-ItemDisplay[tsc]: %GREEN%!%GRAY%TP
-ItemDisplay[isc]: %GREEN%!%GRAY%ID
+ItemDisplay[tsc CLVL<30]: %GREEN%!%GRAY%TP
+ItemDisplay[isc CLVL<30]: %GREEN%!%GRAY%ID
 ItemDisplay[tbk]: %GREEN%!%GRAY%TP Book
 ItemDisplay[ibk]: %GREEN%!%GRAY%ID Book
 
 //║                      ▬▬▬▬▬ Healing, Mana, and Rejuvination Potions ▬▬▬▬▬                      ║
-ItemDisplay[hp4 CLVL<70]: %GREEN%!%RED%Grt HP
+ItemDisplay[hp4 CLVL<85]: %GREEN%!%RED%Grt HP
 ItemDisplay[hp4]: 
 ItemDisplay[hp5]: %GREEN%!%RED%HP
-ItemDisplay[mp4 CLVL<70]: %GREEN%!%BLUE%Grt Mana
+ItemDisplay[mp4 CLVL<85]: %GREEN%!%BLUE%Grt Mana
 ItemDisplay[mp4]: 
 ItemDisplay[mp5]: %GREEN%!%BLUE%MP
 ItemDisplay[hp1 CLVL<15]: %GREEN%!%RED%Min HP
@@ -74,24 +74,24 @@ ItemDisplay[mp3 CLVL<26]: %GREEN%!%BLUE%Reg Mana
 ItemDisplay[mp1 CLVL>14]:
 ItemDisplay[mp2 CLVL>19]:
 ItemDisplay[mp3 CLVL>25]:
-ItemDisplay[rvl]: %NL%%BLACK%   %GREEN%!%PURPLE%7%  %BLACK%%NL%
-ItemDisplay[rvs]: %NL%%BLACK%   %GREEN%!%PURPLE%3%  %BLACK%%NL%
+ItemDisplay[rvl]: %GREEN%!%PURPLE%Full Rejuvination
+ItemDisplay[rvs]: %GREEN%!%PURPLE%Rejuvination
 
 
 ║                                   ▬▬▬▬▬ Special Items ▬▬▬▬▬                                   ║
-ItemDisplay[pk1]: %NL%          %RED%#%WHITE%#%BLUE%# %TAN%Terror %GRAY%[Countess] %BLUE%#%WHITE%#%RED%#          %NL%%NOTIFY-ITEM%
-ItemDisplay[pk2]: %NL%          %RED%#%WHITE%#%BLUE%# %TAN%Hate %GRAY%[Summoner] %BLUE%#%WHITE%#%RED%#          %NL%%NOTIFY-ITEM%
-ItemDisplay[pk3]: %NL%          %RED%#%WHITE%#%BLUE%# %TAN%Destruction %GRAY%[Nih] %BLUE%#%WHITE%#%RED%#          %NL%%NOTIFY-ITEM%
+ItemDisplay[pk1]: %NL%          %RED%### %TAN%Terror %GRAY%[Countess] %RED%###          %NL%%NOTIFY-ITEM%
+ItemDisplay[pk2]: %NL%          %RED%### %TAN%Hate %GRAY%[Summoner] %RED%###          %NL%%NOTIFY-ITEM%
+ItemDisplay[pk3]: %NL%          %RED%### %TAN%Destruction %GRAY%[Nihlatak] %RED%###          %NL%%NOTIFY-ITEM%
 
-ItemDisplay[toa]: %RED%#%WHITE%#%BLUE%# %TAN%%NAME% %BLUE%#%WHITE%#%RED%#%NOTIFY-ITEM% //Token of Absolution
-ItemDisplay[tes]: %RED%## %TAN%%NAME% %PURPLE%[Andy\Dury] %RED%##%NOTIFY-ITEM% //Twisted Essence
+ItemDisplay[toa]: %RED%### %TAN%%NAME% %RED%###%NOTIFY-ITEM% //Token of Absolution
+ItemDisplay[tes]: %RED%## %TAN%%NAME% %PURPLE%[Andariel\Duriel] %RED%##%NOTIFY-ITEM% //Twisted Essence
 ItemDisplay[ceh]: %RED%## %TAN%%NAME% %PURPLE%[Meph] %RED%##%NOTIFY-ITEM% //Charged Essence
 ItemDisplay[bet]: %RED%## %TAN%%NAME% %PURPLE%[Diablo] %RED%##%NOTIFY-ITEM% //Burning Essence
 ItemDisplay[fed]: %RED%## %TAN%%NAME% %PURPLE%[Baal] %RED%##%NOTIFY-ITEM% //Festering Essence
 
-ItemDisplay[dhn]: %RED%#%WHITE%#%BLUE%# %TAN%Diablo's Horn %BLUE%#%WHITE%#%RED%#
-ItemDisplay[bey]: %RED%#%WHITE%#%BLUE%# %TAN%Baal's Eye %BLUE%#%WHITE%#%RED%#
-ItemDisplay[mbr]: %RED%#%WHITE%#%BLUE%# %TAN%Mephisto's Brain %BLUE%#%WHITE%#%RED%#
+ItemDisplay[dhn]: %RED%### %TAN%Diablos Horn %RED%###
+ItemDisplay[bey]: %RED%### %TAN%Baals Eye %RED%###
+ItemDisplay[mbr]: %RED%### %TAN%Mephistos Brain %RED%###
 
 // Other Special Items
 ItemDisplay[ear]: //Hide Ears
@@ -108,13 +108,17 @@ ItemDisplay[RW ETH]: %GRAY%E.%NAME% %RED%[%WHITE%%SOCKETS%%RED%]
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //║                   ▬▬▬▬▬ [Optional] Rules for Ignoring Specific Items ▬▬▬▬▬                    ║
 //ItemDisplay[MAG !ID cm2]: //Ignore unidentified magic large charms.
-ItemDisplay[MAG !ID rin CLVL>69]: //Ignore unidentified magic rings at level 70+.
+//ItemDisplay[MAG !ID rin CLVL>69]: //Ignore unidentified magic rings at level 70+.
 //ItemDisplay[MAG !ID jew ILVL<66]: //Ignore unidentified magic jewels unless they have an item level high enough for ED +40%.
 
-ItemDisplay[MAG !ID (cm1 OR cm2 OR cm3 OR jew)]: %NL%%DOT-9B%%GREEN%####   %BLUE%%NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]   %GREEN%####%NL% //Magical Unid SC/GC
-ItemDisplay[MAG !ID cm2 CLVL<76]: %BLUE%%NAME% //Magical Unid Large Charm
-ItemDisplay[RARE !ID (jew OR rin OR amu)]: %NL%%NL%%DOT-9B%%GREEN%#### %YELLOW%%NAME% %GREEN%####%NL%%NL% //Rare Jewel, Ring, Ammy
-ItemDisplay[RARE !ID (ci0 OR ci1 OR ci2 OR ci3)]: %NL%%NL%%DOT-9B%%GREEN%#### %YELLOW%%NAME% %GREEN%####%NL%%NL% //Rare Circlets
+ItemDisplay[MAG !ID (cm1 OR cm2 OR cm3 OR jew)]: %NL%%DOT-9B%%GREEN%####   %BLUE%%NAME% %WHITE%[%GRAY%%ILVL%%WHITE%]   %GREEN%####%NL% //Magical Unid SC/GC
+ItemDisplay[MAG !ID cm2]: %BLUE%%NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]  //Magical Unid Large Charm
+ItemDisplay[RARE !ID (jew OR rin OR amu)]: %NL%%NL%%DOT-9B%%GREEN%#### %YELLOW%%NAME%%WHITE%[%GRAY%L%ILVL%%WHITE%]  %GREEN%####%NL%%NL% //Unidentified Rare Jewel, Ring, Ammy
+ItemDisplay[RARE !ID (ci0 OR ci1 OR ci2 OR ci3)]: %NL%%NL%%DOT-9B%%GREEN%#### %YELLOW%%NAME%%WHITE%[%GRAY%%ILVL%%WHITE%]  %GREEN%####%NL%%NL% //Rare Circlets
+
+ItemDisplay[RARE (jew OR rin OR amu)]: %YELLOW%%NAME%%WHITE%[%GRAY%%ILVL%%WHITE%] //Identified Rare Jewel, Ring, Ammy
+ItemDisplay[MAG (jew OR rin OR amu)]: %BLUE%%NAME%%WHITE%[%GRAY%%ILVL%%WHITE%] //Identified Rare Jewel, Ring, Ammy
+ItemDisplay[MAG ID (cm1 OR cm2 OR cm3 OR jew)]: %BLUE%%NAME% %WHITE%[%GRAY%%ILVL%%WHITE%] //Magical SC/GC
 
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                           ▬▬▬▬▬ General Equipment Processing ▬▬▬▬▬                            ║
@@ -123,25 +127,35 @@ ItemDisplay[RARE !ID (ci0 OR ci1 OR ci2 OR ci3)]: %NL%%NL%%DOT-9B%%GREEN%#### %Y
 // color for this rule if used is to set it to %RED%.
 //ItemDisplay[NMAG ETH]: %RED%ETH %ORANGE%%NAME%%CONTINUE%
 
-ItemDisplay[ETH UNI]: %NL%         %RED%ETH %GOLD%%NAME%%NOTIFY-ITEM%         %NL%%CONTINUE%
-ItemDisplay[ETH SET]: %NL%         %RED%ETH %GREEN%%NAME%%NOTIFY-ITEM%         %NL%%CONTINUE%
+ItemDisplay[ETH UNI]: %NL%         %GRAY%ETH %GOLD%%NAME%%NOTIFY-ITEM%         %NL%%CONTINUE%
+ItemDisplay[ETH SET]: %NL%         %GRAY%ETH %GREEN%%NAME%%NOTIFY-ITEM%         %NL%%CONTINUE%
 ItemDisplay[ETH MAG]: %RED%ETH %BLUE%%NAME%%CONTINUE%
-ItemDisplay[ETH NMAG]: %GREEN%ETH %GRAY%%NAME%%CONTINUE%
+ItemDisplay[ETH NMAG]: %RED%ETH %GRAY%%NAME%%CONTINUE%
 ItemDisplay[ETH RARE]: %RED%ETH %YELLOW%%NAME%%CONTINUE%
 
-ItemDisplay[NMAG !ETH]: %GRAY%%NAME%%CONTINUE%
+ItemDisplay[NMAG !ETH]: %WHITE%%NAME%%CONTINUE%
 ItemDisplay[MAG]: %BLUE%%NAME%%CONTINUE%
 ItemDisplay[RARE]: %YELLOW%%NAME%%CONTINUE%
-ItemDisplay[SET]: %NL%         %GREEN%%NAME%%NOTIFY-ITEM%         %NL%%CONTINUE%
-ItemDisplay[UNI]: %NL%         %GOLD%%NAME%%NOTIFY-ITEM%         %NL%%CONTINUE%
+ItemDisplay[SET !ID]: %NL%         %GREEN%%NAME%%NOTIFY-ITEM%         %NL%%CONTINUE%
+ItemDisplay[UNI !ID]: %NL%         %GOLD%%NAME%%NOTIFY-ITEM%         %NL%%CONTINUE%
 ItemDisplay[!(NMAG OR MAG OR RARE OR SET OR UNI)]: %ORANGE%%NAME%%CONTINUE%
+
+
+// Specific Items
+ItemDisplay[!SUP uit NMAG]: %RED% Monarch %RED%
+ItemDisplay[SUP uit NMAG]: %RED%# %WHITE%Superior Monarch %RED%#
 
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                  ▬▬▬▬▬ Sockets for Everything Except Non-Magical Items ▬▬▬▬▬                  ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 ItemDisplay[!NMAG SOCK>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]
 
-ItemDisplay[!NMAG]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
+ItemDisplay[!ID !NMAG]: %NAME% %WHITE%%WHITE%[%GRAY%%ILVL%%WHITE%]
+ItemDisplay[!NMAG %PRICE%>34999]: %NAME% %WHITE%[%GRAY%%ILVL%%WHITE%]%WHITE%[35K%GOLD%G%WHITE%]
+ItemDisplay[ID !NMAG ]: %NAME% %WHITE%[%GRAY%%ILVL%%WHITE%]
+ItemDisplay[%PRICE%>34999]: %NAME% %WHITE%[%GRAY%%ILVL%%WHITE%]%WHITE%[35K%GOLD%G%WHITE%]
+
+[%PRICE%%GOLD%G%WHITE%]
 
 ItemDisplay[SOCK>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]
 
